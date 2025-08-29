@@ -24,8 +24,8 @@ const slides = [
 
 export default function Hero() {
   return (
-    <div className="relative bg-gradient-to-r from-[#feffff]">
-      <div className="container mx-auto py-9 px-6 md:px-24">
+    <div className="relative bg-gradient-to-r from-[#feffff] pt-[72px]">
+      <div className="container mx-auto py-20 px-6 md:px-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           <div>
             <div className="mb-3">

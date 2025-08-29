@@ -10,7 +10,7 @@ const navItems = [
   { name: "الرئيسية", href: "/", isActive: true },
   { name: "خدماتنا", href: "#services" },
   { name: "عنا", href: "#about" },
-  { name: "اخر المشاريع", href: "/projects" },
+  { name: "اخر المشاريع", href: "#projects" },
   { name: "مدونة", href: "/blog" },
   { name: "تواصل معنا", href: "/contact" },
 ];
@@ -19,7 +19,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="border-b border-gray-200 py-4 bg-gradient-to-r from-[#feffff]">
+    <nav className="fixed top-0 left-0 right-0 z-50 border-b border-gray-200 py-4 bg-gradient-to-r from-[#feffff] backdrop-blur-md">
       <div className="container mx-auto px-6 md:px-24">
         <div className="flex justify-between items-center">
           <Link href="/" className="shrink-0 order-1">

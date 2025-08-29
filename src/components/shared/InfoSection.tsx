@@ -23,11 +23,11 @@ export default function InfoSection({
   imageAlt,
 }: SectionProps) {
   return (
-    <div className="bg-gradient-to-r from-[#feffff] pt-20" id={id}>
+    <div className="bg-gradient-to-r from-[#feffff] pt-36" id={id}>
       <div className="container mx-auto px-6 md:px-24">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           {/* Content (left only on lg+, below image otherwise) */}
-          <div className="order-2 lg:order-2 pt-14">
+          <div className="order-2 lg:order-2 pt-12 ">
             <div className="mb-1">
               <span className="text-[#F57568] font-bold">{subtitle}</span>
             </div>

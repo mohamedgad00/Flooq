@@ -1,4 +1,5 @@
 
+import SectionHeader from './shared/SectionHeader';
 import ServiceCard from './shared/ServiceCard';
 
 export default function Services() {
@@ -48,23 +49,19 @@ export default function Services() {
   ];
 
   return (
-    <div className="bg-gradient-to-r from-[#feffff] pt-20" id='services'>
+    <div className="bg-gradient-to-r from-[#feffff] pt-36" id='services'>
       <div className="container mx-auto px-6 md:px-24">
-        <>
-          <div className="mb-1.5">
-            <p className="text-[#F57568] font-bold text-center">أفضل الخدمات</p>
-          </div>
-          <div className="mb-7">
-            <h2 className="text-[#323232] text-[40px] font-bold text-center">ماذا نقدم لك ؟</h2>
-          </div>
-          <div className="mb-16">
-            <p className="text-center text-[#969696] leading-7">
-              بينما يمكننا تخصيص خطتنا لتناسب احتياجاتك، فإن
-              <br />
-              معظم العملاء يطلبون الخدمات التالية بشكل منتظم:
-            </p>
-          </div>
-        </>
+        <SectionHeader
+          subtitle="أفضل الخدمات"
+          title="ماذا نقدم لك ؟"
+          description= {
+          <>
+            بينما يمكننا تخصيص خطتنا لتناسب احتياجاتك، فإن  
+            <br />
+            معظم العملاء يطلبون الخدمات التالية بشكل منتظم
+          </>
+        }
+        />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
