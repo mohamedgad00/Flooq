@@ -8,7 +8,7 @@ import Button from "@/components/shared/Button";
 
 const navItems = [
   { name: "الرئيسية", href: "/", isActive: true },
-  { name: "خدماتنا", href: "/services" },
+  { name: "خدماتنا", href: "#services" },
   { name: "عنا", href: "/about" },
   { name: "اخر المشاريع", href: "/projects" },
   { name: "مدونة", href: "/blog" },
@@ -27,7 +27,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Menu */}
-          <ul className="hidden md:flex gap-12 order-2">
+          <ul className="hidden lg:flex gap-12 order-2">
             {navItems.map((item) => (
               <li key={item.name}>
                 <Link
@@ -47,7 +47,7 @@ export default function Navbar() {
           <Button 
             variant="outline" 
             size="md"
-            className="hidden md:block order-3 cursor-pointer"
+            className="hidden lg:block order-3 cursor-pointer"
           >
             طلب خدمة
           </Button>
@@ -56,7 +56,7 @@ export default function Navbar() {
           <Button
             variant="ghost"
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden order-3 p-2 cursor-pointer hover:text-[#f57568] active:scale-95 transition-all"
+            className="lg:hidden order-3 p-2 cursor-pointer hover:text-[#f57568] active:scale-95 transition-all"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </Button>
@@ -65,7 +65,7 @@ export default function Navbar() {
         {/* Mobile Menu */}
         <div
           className={`
-          md:hidden 
+          lg:hidden 
           fixed left-0 right-0 
           top-[72px] 
           z-50

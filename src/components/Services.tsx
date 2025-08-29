@@ -48,7 +48,7 @@ export default function Services() {
   ];
 
   return (
-    <div className="bg-gradient-to-r from-[#feffff] pt-20">
+    <div className="bg-gradient-to-r from-[#feffff] pt-20" id='services'>
       <div className="container mx-auto px-6 md:px-24">
         <>
           <div className="mb-1.5">

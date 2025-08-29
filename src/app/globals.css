@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Pagination bullets default */
 .pagination-custom .swiper-pagination-bullet {
   width: 12px;
