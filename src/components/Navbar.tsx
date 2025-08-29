@@ -9,7 +9,7 @@ import Button from "@/components/shared/Button";
 const navItems = [
   { name: "الرئيسية", href: "/", isActive: true },
   { name: "خدماتنا", href: "#services" },
-  { name: "عنا", href: "/about" },
+  { name: "عنا", href: "#about" },
   { name: "اخر المشاريع", href: "/projects" },
   { name: "مدونة", href: "/blog" },
   { name: "تواصل معنا", href: "/contact" },
