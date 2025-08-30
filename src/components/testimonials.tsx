@@ -107,7 +107,7 @@ export default function Testimonials() {
         >
           {testimonials.map((t) => (
             <SwiperSlide key={t.id}>
-              <div className="relative bg-white rounded-3xl shadow-md p-8 text-center">
+              <div className="relative bg-[#FDFDFD] rounded-3xl p-8 text-center">
                 <div>
                   <Image
                     src={t.image}
