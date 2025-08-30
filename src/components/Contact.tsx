@@ -15,7 +15,7 @@ export default function Contact() {
             </>
           }
         />
-        <div className="w-full md:w-2/3 lg:w-2/5 mx-auto flex justify-between items-center bg-white rounded-[14px] p-2">
+        <div className="w-full md:w-2/3 lg:w-2/5 mx-auto flex justify-between items-center bg-white rounded-[14px] p-2 mb-20">
           <div className="pr-4">
             <Image src={"/envolp.svg"} alt="message" width={40} height={40}></Image>
           </div>

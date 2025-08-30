@@ -3,7 +3,7 @@ import { Almarai } from "next/font/google";
 import "./globals.css";
 
 import Navbar from "@/components/Navbar";
-// import Footer from "@/components/Footer";
+import Footer from "@/components/Footer";
 
 
 const almarai = Almarai({
@@ -26,7 +26,7 @@ export default function RootLayout({
       <body className={almarai.className}>
         <Navbar />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );
