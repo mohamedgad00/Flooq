@@ -1,7 +1,4 @@
-// import Image from "next/image";
-// import Button from "./shared/Button";
 import InfoSection from "./shared/InfoSection";
-
 
 export default function About() {
   return (
