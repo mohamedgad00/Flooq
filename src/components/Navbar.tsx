@@ -12,7 +12,7 @@ const navItems = [
   { name: "عنا", href: "#about" },
   { name: "اخر المشاريع", href: "#projects" },
   { name: "مدونة", href: "#blog" },
-  { name: "تواصل معنا", href: "/contact" },
+  { name: "تواصل معنا", href: "#contact" },
 ];
 
 export default function Navbar() {
