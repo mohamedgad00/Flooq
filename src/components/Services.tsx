@@ -54,13 +54,13 @@ export default function Services() {
         <SectionHeader
           subtitle="أفضل الخدمات"
           title="ماذا نقدم لك ؟"
-          description= {
-          <>
-            بينما يمكننا تخصيص خطتنا لتناسب احتياجاتك، فإن  
-            <br />
-            معظم العملاء يطلبون الخدمات التالية بشكل منتظم
-          </>
-        }
+          description={
+            <>
+              بينما يمكننا تخصيص خطتنا لتناسب احتياجاتك، فإن
+              <br />
+              معظم العملاء يطلبون الخدمات التالية بشكل منتظم
+            </>
+          }
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

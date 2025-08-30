@@ -6,20 +6,21 @@ interface SectionHeaderProps {
   subtitle: string;
   title: string;
   description?: ReactNode;
+  align?: "left" | "center" | "right";
 }
 
-export default function SectionHeader({ subtitle, title, description }: SectionHeaderProps) {
+export default function SectionHeader({ subtitle, title, description, align = "center"}: SectionHeaderProps) {
   return (
-    <div className="mb-16 text-center">
+    <div className={`mb-16 text-${align}`}>
       <div className="mb-1.5">
-        <p className="text-[#F57568] font-bold text-center">{subtitle}</p>
+        <p className="text-[#F57568] font-bold">{subtitle}</p>
       </div>
       <div className="mb-7">
-        <h2 className="text-[#323232] text-[40px] font-bold text-center">{title}</h2>
+        <h2 className="text-[#323232] text-[40px] font-bold">{title}</h2>
       </div>
       {description && (
         <div>
-          <p className="text-[#969696] leading-7 text-center">
+          <p className="text-[#969696] leading-7">
             {description}
           </p>
         </div>

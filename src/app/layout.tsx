@@ -8,7 +8,7 @@ import Navbar from "@/components/Navbar";
 
 const almarai = Almarai({
   subsets: ["arabic"],
-  weight: ["300", "400", "700"],
+  weight: ["300", "400" , "700"],
 });
 
 export const metadata: Metadata = {

@@ -76,7 +76,7 @@ export default function Hero() {
           </div>
 
           {/* Swiper Section */}
-          <div className="hidden lg:block">
+          <div className="hidden md:block">
             <Swiper
               modules={[Autoplay, Pagination]}
               pagination={{
