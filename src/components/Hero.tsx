@@ -2,10 +2,13 @@
 
 import Button from "@/components/shared/Button";
 import Image from "next/image";
+import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import { useState } from "react";
+import ServiceRequestModal from "@/components/shared/ServiceRequestModal";
 
 const slides = [
   {
@@ -23,6 +26,8 @@ const slides = [
 ];
 
 export default function Hero() {
+  const [open, setOpen] = useState(false);
+
   return (
     <div className="relative bg-gradient-to-r from-[#feffff] pt-[72px]">
       <div className="container mx-auto py-20 px-6 md:px-24">
@@ -52,12 +57,14 @@ export default function Hero() {
             </div>
 
             <div className="mb-12">
-              <Button variant="primary" size="lg">
+              <Button variant="primary" size="lg" onClick={() => setOpen(true)}>
                 طلب خدمة
               </Button>
-              <Button variant="outline" size="lg" className="mr-5">
-                خدماتنا
-              </Button>
+              <Link href="#services">
+                <Button variant="outline" size="lg" className="mr-5">
+                  خدماتنا
+                </Button>
+              </Link>
             </div>
 
             <div className="flex gap-4">
@@ -117,6 +124,9 @@ export default function Hero() {
           </div>
         </div>
       </div>
+
+      {/* Service Request Modal */}
+      <ServiceRequestModal isOpen={open} onClose={() => setOpen(false)} />
     </div>
   );
 }

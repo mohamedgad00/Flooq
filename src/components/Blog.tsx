@@ -60,7 +60,7 @@ export default function Blog() {
             </p>
           </div>
         </div>
-        <Button variant="primary" size="lg">
+        <Button variant="primary" size="lg" className="mt-10">
           مشاهدة المزيد
         </Button>
       </div>
