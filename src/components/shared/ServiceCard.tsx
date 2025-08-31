@@ -12,7 +12,7 @@ interface ServiceCardProps {
 
 export default function ServiceCard({ icon, title, description, link }: ServiceCardProps) {
   return (
-    <div className="rounded-3xl p-8 bg-[#FDFDFD] transition-all duration-300 ease-in-out hover:scale-[1.02]">
+    <div className="rounded-3xl p-8 bg-[#FDFDFD] transition-all duration-300 ease-in-out hover:scale-[1.02]" data-aos="fade-up">
       <div className="size-16 rounded-3xl bg-[#FFF5F1] flex justify-center items-center mb-5 transition-colors duration-300 hover:bg-[#FFE8E4]">
         <Image src={icon} alt={title} width={30} height={30} />
       </div>

@@ -33,11 +33,11 @@ export default function Hero() {
       <div className="container mx-auto py-20 px-6 md:px-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           <div>
-            <div className="mb-3">
+            <div className="mb-3" data-aos="fade-right" data-aos-delay="100">
               <span className="text-[#f57568]">مؤسسة فلوق</span>
             </div>
 
-            <div className="mb-6">
+            <div className="mb-6" data-aos="fade-up" data-aos-delay="200">
               <p className="text-[55px] font-bold text-[#323232]">
                 <span className="text-[#27bbad]">نحن</span> نحب مساعدتك
                 <br />
@@ -47,7 +47,7 @@ export default function Hero() {
               </p>
             </div>
 
-            <div className="mb-10">
+            <div className="mb-10" data-aos="fade-up" data-aos-delay="300">
               <p className="text-[#646464] leading-8">
                 نحن نساعد أفكارك على النمو في عالم البرمجة والتصميم. سواء كنت
                 بحاجة إلى
@@ -56,7 +56,7 @@ export default function Hero() {
               </p>
             </div>
 
-            <div className="mb-12">
+            <div className="mb-12" data-aos="fade-up" data-aos-delay="400">
               <Button variant="primary" size="lg" onClick={() => setOpen(true)}>
                 طلب خدمة
               </Button>
@@ -67,7 +67,7 @@ export default function Hero() {
               </Link>
             </div>
 
-            <div className="flex gap-4">
+            <div className="flex gap-4" data-aos="fade-up" data-aos-delay="500">
               <div className="size-12 bg-[#EDFAF8] rounded-full flex items-center justify-center">
                 <Image src="/call.svg" alt="hero" width={48} height={48} />
               </div>
@@ -83,7 +83,7 @@ export default function Hero() {
           </div>
 
           {/* Swiper Section */}
-          <div className="hidden md:block">
+          <div className="hidden md:block" data-aos="fade-left" data-aos-delay="400">
             <Swiper
               modules={[Autoplay, Pagination]}
               pagination={{

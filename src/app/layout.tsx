@@ -4,11 +4,12 @@ import "./globals.css";
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import AOSInit from "@/components/AOSInit";
 
 
 const almarai = Almarai({
   subsets: ["arabic"],
-  weight: ["300", "400" , "700"],
+  weight: ["300", "400", "700"],
 });
 
 export const metadata: Metadata = {
@@ -24,6 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en" dir="rtl">
       <body className={almarai.className}>
+        <AOSInit />
         <Navbar />
         {children}
         <Footer />
