@@ -1,6 +1,7 @@
 "use client";
 
 import { X } from "lucide-react";
+import Swal from "sweetalert2";
 import Button from "./Button";
 
 interface ServiceRequestModalProps {
@@ -130,7 +131,20 @@ export default function ServiceRequestModal({ isOpen, onClose }: ServiceRequestM
           </div>
 
           <div className="md:col-span-2 flex justify-center">
-            <Button variant="primary" size="md">
+            <Button
+              variant="primary"
+              size="md"
+              type="button"
+              onClick={() => {
+                onClose(); // Close the modal first
+                Swal.fire({
+                  title: "نجح الارسال!",
+                  text: "تم ارسال طلبك بنجاح",
+                  icon: "success",
+                  confirmButtonText: "حسناً",
+                  confirmButtonColor: "#27bbad"
+                });
+              }}>
               إرسال
             </Button>
           </div>
