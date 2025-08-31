@@ -7,9 +7,14 @@ import "aos/dist/aos.css";
 export default function AOSInit() {
   useEffect(() => {
     AOS.init({
-      duration: 800,
-      easing: 'ease',
-      offset: 30,
+      duration: 500,
+      easing: 'ease-out',
+      offset: 5,
+      once: true,
+      startEvent: 'DOMContentLoaded',
+      useClassNames: true, // This enables the use of CSS classes for animations
+      disableMutationObserver: false,
+      throttleDelay: 99,
     });
   }, []);
 
