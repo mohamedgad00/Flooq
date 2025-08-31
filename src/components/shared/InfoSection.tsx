@@ -29,10 +29,10 @@ export default function InfoSection({
           {/* Content (left only on lg+, below image otherwise) */}
           <div className="order-2 lg:order-2 pt-12" data-aos="fade-up" data-aos-delay="200">
             <div className="mb-1">
-              <span className="text-[#F57568] font-bold" data-aos="fade-right" data-aos-delay="400">{subtitle}</span>
+              <span className="text-[#F57568] font-bold" data-aos="fade-up" data-aos-delay="400">{subtitle}</span>
             </div>
             <div className="mb-7">
-              <h2 className="text-[#323232] text-[40px] font-bold" data-aos="fade-right" data-aos-delay="500">{title}</h2>
+              <h2 className="text-[#323232] text-[40px] font-bold" data-aos="fade-up" data-aos-delay="500">{title}</h2>
             </div>
             <div className="mb-12">
               <p className="text-[#969696] leading-7" data-aos="fade-up" data-aos-delay="600">{description}</p>
