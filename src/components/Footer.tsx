@@ -8,7 +8,7 @@ export default function Footer() {
     <footer className="bg-[#27bbad] pt-14" id='footer'>
       <div className="container mx-auto px-6 md:px-24 text-center">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-60">
-          <div className="lg:pr-16 flex flex-col items-center text-center">
+          <div className="flex flex-col items-center text-center">
             <div className="mb-4">
               <Image src="/logo.png" alt="Logo" width={60} height={60} />
             </div>
@@ -19,7 +19,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="lg:pr-20">
+          <div className="">
             <div className='mb-5'>
               <h5 className='text-white font-bold'>حول</h5>
             </div>
@@ -30,7 +30,7 @@ export default function Footer() {
               </ul>
             </div>
           </div>
-          <div className="lg:pr-0">
+          <div className="">
             <div className='mb-5'>
               <h5 className='text-white font-bold'>تواصل</h5>
             </div>
